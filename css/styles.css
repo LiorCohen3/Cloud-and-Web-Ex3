@@ -1,0 +1,427 @@
+* {font-family: 'Amiko';margin:0; padding:0;}
+
+header, main, footer, nav, aside, section {
+    display: block;
+}
+body {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 96px;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+header {
+    width: 100%;
+    background-color: #F2E9E9;
+    min-height: 100px;
+
+}
+
+header > ul, .left_bar > ul {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    list-style-type: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+header > ul > li, .left_bar > ul > li {
+    margin: 20px;
+    padding: 20px;
+    font-style: normal;
+    font-weight: 550;
+}
+
+header > ul > li.selected, .left_bar > ul > li.selected {
+    position: relative;
+    list-style-type: none;
+    margin: 20px;
+    padding: 20px;
+}
+
+header > ul > li.selected::before, .left_bar > ul > li.selected::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+header > ul > li > a:hover, .left_bar > ul > li > a:hover {
+    position: relative;
+}
+
+header > ul > li > a::before, .left_bar > ul > li > a::before {
+    content: "";
+    position: absolute;
+    top: -21px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background-color 0.4s ease-in-out;
+}
+
+header > ul > li > a:hover::before, .left_bar > ul > li > a:hover::before {
+    background-color: black;
+}
+
+
+/* Index Start */
+#Mix {
+    display: flex;
+    width: 100%;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 50px;
+}
+
+#BoxWrapper {
+    display: flex;
+    padding: 20px 70px;
+    justify-content: top;
+    /* align-items: center; */
+}
+
+.ycontainer1 {
+    display: flex;
+    width: 134px;
+    height: 624px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.ybox {
+    background-color: #EBEF18;
+    margin-bottom: 12px;
+}
+
+.box1 {
+    height: 23px;
+    width: 75px;
+}
+
+.box2 {
+    height: 46px;
+    width: 134px;
+}
+
+.box3 {
+    height: 404px;
+    width: 134px;
+}
+
+.box4 {
+    height: 28px;
+    width: 88px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box5 {
+    height: 25px;
+    width: 25px;
+    margin-right: 7px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.ycontainer2 {
+    display: flex;
+    width: 288px;
+    height: 396px;
+    align-items: flex-start;
+}
+
+.box7 {
+    height: 352px;
+    width: 246px;
+    margin-top: 30px;
+}
+
+.column_right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 14px;
+}
+
+.box8 {
+    height: 55px;
+    width: 28px;
+}
+
+.box9 {
+    height: 181px;
+    width: 28px;
+}
+
+.ycontainer3 {
+    display: flex;
+    width: 288px;
+    height: 212px;
+    align-items: flex-start;
+}
+
+.box10 {
+    width: 123px;
+    height: 212px;
+}
+
+.column_bottom {
+    width: 166px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.space {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+}
+
+.box11 {
+    width: 55px;
+    height: 105px;
+}
+
+
+
+.box12 {
+    width: 110px;
+    height: 58px;
+    margin-left: 15px;
+}
+/* Index End */
+
+/* Layout 2 Start */
+#Wrapper {
+    width: 100%;
+    height: 100%;
+    min-height: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gray_boxes_wrap {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.gray_right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.gray_left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 200px;
+}
+
+.gbox {
+    background-color: #C4C4C4;
+    width: 457px;
+    height: 299px;
+    margin: 70px 55px;
+}
+
+.right_bar {
+    flex: 1 0 100px;
+    background-color: #EBEF18;
+    max-width: 12%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.side_box_holder {
+    width: 100%;
+    height: 50%;
+}
+
+.side_text_holder {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.side_text_holder a{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 128px;
+}
+
+.side_box {
+    height: 80px;
+    width: 80px;
+}
+
+.black {
+    background-color: #000000;
+}
+
+.side_box.box1 {
+    position: relative;
+    left: 0;
+    top: 14%;
+}
+
+.side_box.box2 {
+    position: relative;
+    left: 0;
+    top: 60%;
+}
+
+.side_box.box3 {
+    background-color: #ffffff;
+    position: relative;
+    float: right;
+    top: 20%;
+}
+
+
+/* Layout 2 End */
+
+/* Layout 3 Start */
+#Wrapper2 {
+    width: 100%;
+    height: 100%;
+    min-height: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bbox {
+    position: relative;
+    float: right;
+    margin: 10px 10px;
+}
+
+.holder {
+    width: 100%;
+    min-height: 700px;
+    height: 70%;
+    display: flex;
+    justify-content: center; 
+}
+
+.right_bar.blue {
+    background-color: rgba(24, 71, 239, 0.3);
+    min-width: 100px;
+    height: 100%;
+    min-height: inherit;
+}
+
+.left_bar {
+    background-color: #E5E5E5;
+    height: 100%;
+    min-height: inherit;
+}
+
+.content_wrap {
+    height: 100%;
+    width: 100%;
+}
+
+.yellow_section {
+    background-color: #EBEF18;
+    width: 100%;
+    min-height: 300px;
+    height: 30%;
+}
+
+/* Layout 3 End */
+
+/* Styles for mobile */
+@media screen and (max-width: 768px) {
+    #Wrapper2 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+    }
+
+    .holder {
+        flex-direction: column;
+        align-items: center;
+        min-height: 0;
+    }
+
+    .left_bar {
+        background-color: #E5E5E5;
+        width: 100%;
+        min-height: 0;
+    }
+
+    .content_wrap {
+        flex-basis: 100%;
+        width: 100%;
+        min-height: 500px;
+    }
+
+    .right_bar {
+        display: none;
+    }
+
+    .yellow_section {
+        background-color: #EBEF18;
+        width: 100%;
+        /* min-height: 300px; */
+        height: 100%;
+    }
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 41px;
+    background-color: black;
+}
